@@ -1,0 +1,72 @@
+extends layout/layout
+
+block content
+
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.camersur.com", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario", class="img-fluid")
+
+  section.resultados.my-5
+    .container
+
+      h1.cmsuniversidad-titulo.cmsuniversidad-titulo--categorias.d-flex.flex-column TÉRMINO BUSCADO
+        span.resultados__cantidad 5 RESULTADOS PARA LA BÚSQUEDA DE
+      .resultado__listado
+        article.resultados__item
+          .resultados__info
+            img.resultados__img(src="images/imagen-curso-1.jpg", alt="")
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL CURSO
+              p.resultados__descripcion Breve descripción de los objetivos y contenido del curso
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.resultados__item
+          .resultados__info
+            img.resultados__img(src="images/imagen-curso-2.jpg", alt="")
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL CURSO
+              p.resultados__descripcion Breve descripción de los objetivos y contenido del curso
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.resultados__item
+          .resultados__info
+            img.resultados__img(src="images/imagen-curso-3.jpg", alt="")
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL CURSO
+              p.resultados__descripcion Breve descripción de los objetivos y contenido del curso
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.resultados__item
+          .resultados__info
+            img.resultados__img(src="images/imagen-curso-4.jpg", alt="")
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL CURSO
+              p.resultados__descripcion Breve descripción de los objetivos y contenido del curso
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+      nav(aria-label='Paginacion')
+        ul.pagination
+          li.page-item
+            a.page-link(href='#', aria-label='Prev')
+              span(aria-hidden='true') «
+              span.sr-only Prev
+          li.page-item
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') 3
+          li.page-item
+            a.page-link(href='#', aria-label='Next')
+              span(aria-hidden='true') »
+              span.sr-only Next
+

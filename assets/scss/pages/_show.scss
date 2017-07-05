@@ -1,0 +1,219 @@
+// Detalle del curso
+.detalle-curso {
+  p {
+    color: gray;
+    line-height: 1.5;
+    font-family: $montserrat-font;
+    font-size: 0.9em;
+  }
+  h2 {
+    color: #444;
+    font-family: $montserrat-font;
+    font-size: 1.4em;
+    margin: 1em auto;
+  }
+  ul {
+    color: gray;
+    font-family: $montserrat-font;
+    font-size: 0.9em;
+    list-style: disc;
+    line-height: 1.5;
+    padding-left: 2em;
+  }
+  &__breadcrumb {
+    margin-bottom: 2em;
+  }
+  &__tag {
+    color: $gris-empresas;
+    margin: 0 0.25em;
+    text-transform: uppercase;
+  }
+}
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    border: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 1em;
+    @include media(md) {
+      flex-basis: calc(50% - 0.5rem);
+    }
+  }
+  &__titulo {
+    background-color: #f7f7f7;
+    border-left: 0.5em solid orange;
+    color: #444;
+    font-family: $josefin-font;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+  }
+  &__descripcion {
+    padding: 1.5em;
+  }
+  &__detalle {
+    margin-bottom: 1em;
+  }
+  &__contenedor-boton {
+    margin-top: auto;
+    text-align: center;
+  }
+}
+
+// Sidebar detalle del curso
+.opciones-curso {
+  .modalidad {
+    background: url("../images/FondoSidebarDetalleCurso1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    padding: 2rem 1.5rem 1rem;
+    margin-bottom: 1em;
+    @include media(sm) {
+      padding: 2em 1rem 1rem;
+    }
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      &__boton {
+        background-color: $verde-eventos;
+        border: none;
+        color: #fff;
+        font-family: $montserrat-font;
+        font-size: 10px;
+        padding: 1em 2em;
+        text-transform: uppercase;
+      }
+    }
+    &__opcion {
+      color: lightgray;
+      font-family: $josefin-font;
+      font-size: 0.9em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      text-transform: uppercase;
+    }
+    &__descripcion {
+      font-family: $josefin-font;
+      font-size: 1.2em;
+    }
+    &__boton {
+      background-color: orange;
+      border: 0;
+      color: #fff;
+      font-family: $josefin-font;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      width: 100%;
+      padding: 0.7em 2em;
+      text-transform: uppercase;
+      @include media(sm) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+
+// Profesores
+.profesores {
+  background: url("../images/FondoSidebarDetalleCurso2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  font-family: $montserrat-font;
+  justify-content: space-between;
+  padding: 2em 1em 1em;
+  @include media(md) {
+    height: auto;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  &__titulo, &__subtitulo {
+    text-align: center;
+  }
+  &__titulo {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  &__subtitulo {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+  &__img {
+    @include img-responsive;
+  }
+  &__descripcion {
+    margin-left: 0.5em;
+  }
+  &__nombre {
+    color: lightgray !important;
+    font-size: 0.9em !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5em !important;
+    text-transform: uppercase !important;
+  }
+  &__profesion {
+    font-size: 0.75em;
+    text-transform: uppercase;
+  }
+}
+
+// Cursos Relacionados
+.cursos-relacionados {
+  padding-top: 1em;
+  &__contenedor-boton {
+    margin-top: auto;
+    text-align: center;
+  }
+}
+
+// Otras Categorias
+.otras-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  h1 {
+    flex-basis: 100%;
+  }
+  &__item {
+    background-color: $gris-empresas;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding: 1em;
+    &:last-child {
+      background-color: $azul-claro;
+    }
+    @include media(sm) {
+      flex-basis: calc(50% - 0.5rem);
+    }
+    @include media(md) {
+      flex-basis: calc(25% - 0.5rem);
+    }
+  }
+  &__nombre {
+    margin-top: 1em;
+    text-align: center;
+  }
+}

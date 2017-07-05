@@ -1,0 +1,249 @@
+// SECCION CURSOS
+.cursos, .actualidad {
+  background: $azul-oscuro;
+  &__item {
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+    margin-bottom: 1em;
+    position: relative;
+    @include media(md) {
+      flex: 0 1 calc(33.33% - 1em);
+    }
+  }
+  &__img {
+    @include img-responsive;
+    object-fit: cover;
+  }
+  &__contenido {
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: -1em;
+    padding: 1em;
+    width: 90%;
+    &--titulo {
+      color: $azul-medio;
+      font-family: $josefin-font;
+      font-size: em(18);
+      font-weight: 600;
+      margin: 1em auto;
+    }
+    &--descripcion {
+      font-family: $montserrat-font;
+      font-size: em(16);
+      font-weight: 300;
+      line-height: 1.5;
+      margin: 1em auto;
+    }
+    &--txt-complementario {
+      color: $azul-claro;
+      font-family: $montserrat-font;
+      font-size: em(12);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
+.actualidad {
+  &__item {
+    flex: 0 1 calc(100% - 1em);
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Seccion de categorias
+.categorias {
+  padding-top: 2em;
+  &__subtitulo {
+    color: $azul-claro;
+    font-family: $montserrat-font;
+    font-size: em(15);
+    text-transform: uppercase;
+  }
+  &__listado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include media(sm) {
+      justify-content: flex-start;
+    }
+  }
+  &__item {
+    background: $gris-empresas;
+    margin: 1em auto;
+    padding: 0.5em;
+    width: calc(50% - 0.5rem);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include media(sm) {
+      flex-direction: column;
+      width: calc(33.33% - 0.5rem);
+    }
+    img {
+      @include img-responsive;
+      margin-bottom: 1em;
+    }
+    &:last-child {
+      background: $azul-claro;
+      color: #fff;
+    }
+  }
+  &__nombre {
+    color: $azul-claro;
+    font-family: $montserrat-font;
+    font-size: em(14);
+    font-weight: 600;
+    margin-top: auto;
+  }
+}
+
+// Suscripcion
+.suscripcion {
+  margin: 1em auto;
+  @include media(md) {
+    width: 75%;
+  }
+  &__titulo, &__subtitulo {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__titulo {
+    color: $azul-medio;
+    font-family: $josefin-font;
+    font-size: em(22);
+    font-weight: 600;
+    @include media(sm) {
+      font-size: em(44);
+    }
+  }
+  &__subtitulo {
+    color: $azul-claro;
+    font-family: $montserrat-font;
+    font-size: em(16);
+    margin: 1em auto;
+    @include media(sm) {
+      font-size: em(20);
+    }
+  }
+  &__form {
+    .inputAddon {
+      display: flex;
+      &__field {
+        border: 1px solid hsla(31,15%,50%,.25);
+        border-radius: 2px 0 0 2px;
+        font-family: $montserrat-font;
+        font-size: em(10);
+        text-transform: uppercase;
+        padding: 1em 0.75em;
+        flex-basis: 50%;
+        @include media(sm) {
+          font-size: em(18);
+        }
+      }
+      &__item {
+        background-color: $amarillo-universidad;
+        border: 1px solid hsla(31,15%,50%,.25);
+        border-radius: 0 2px 2px 0;
+        color: #fff;
+        font-family: $montserrat-font;
+        font-size: em(10);
+        font-weight: 600;
+        padding: 0.5em 0.75em;
+        position: relative;
+        text-align: center;
+        flex-basis: 50%;
+        @include media(sm) {
+          font-size: em(18);
+        }
+        &:hover {
+          background: darken($amarillo-universidad, 5%);
+        }
+        &:before {
+          content: '';
+          border-left: 6px solid #fff;
+          border-top: 6px solid transparent;
+          border-bottom: 6px solid transparent;
+          position: absolute;
+          top: 32%;
+          right: 0;
+          left: 75%;
+          @include media(sm) {
+            left: 70%;
+            top: 40%;
+          }
+          @include media(md) {
+            left: 67%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Publicidad
+.publicidad {
+  padding-top: 2em;
+}
+
+// Actualidad Academica
+.actualidad {
+  background: #fff;
+  &__item {
+    background: $gris-empresas;
+  }
+  &__contenido {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
+// Anunciantes
+.anunciantes {
+  padding-top: 0;
+  &__item {
+    margin: 1em auto;
+  }
+}
+// Aliados
+.aliados {
+  &__listado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em auto;
+  }
+  &__item {
+    margin: 0.25em;
+  }
+}
+// Sociales
+.sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0 15px;
+  @include media(sm) {
+    flex-direction: row;
+  }
+  &__item {
+    border: 1px solid rgba(#000, 0.4);
+    box-shadow: 0 0 0.5em rgba(#000, 0.6);
+    height: 460px;
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: hidden;
+    @include media(sm) {
+      margin: 0 0.5em;
+    }
+  }
+}

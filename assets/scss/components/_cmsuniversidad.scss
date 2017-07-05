@@ -1,0 +1,153 @@
+.cmsuniversidad-titulo {
+  color: $azul-medio;
+  font-family: $josefin-font;
+  font-size: em(22);
+  font-weight: 600;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+  @include media(sm) {
+    font-size: em(30);
+  }
+  @include media(md) {
+    font-size: em(44);
+  }
+  &--cursos, &--categorias, &--actualidad, &--aliados, &--detalle {
+    border-bottom: 1px solid $azul-claro;
+    font-size: em(18);
+    padding: 0.75em 0.5em 0.25em 0.5em;
+    @include media(sm) {
+      font-size: em(22);
+    }
+    @include media(md) {
+      font-size: em(36);
+    }
+  }
+  &--cursos {
+    border-left: 0.3em solid $amarillo-universidad;
+    color: #fff;
+    flex: 1 1 100%;
+  }
+  &--categorias {
+    border-left: 0.3em solid $verde-eventos;
+    color: $azul-medio;
+  }
+  &--actualidad {
+    border-left: 0.3em solid $azul-claro;
+    color: $azul-medio;
+  }
+  &--aliados {
+    border-left: 0.3em solid $amarillo-universidad;
+    color: $azul-medio;
+  }
+  &--detalle {
+    border-left: 0.3em solid $verde-eventos;
+    color: $azul-medio;
+  }
+}
+.cmsuniversidad-subtitulo {
+  color: $azul-claro;
+  font-family: $montserrat-font;
+  font-size: em(15);
+  margin: 0.5em auto;
+  text-transform: uppercase;
+  @include media(md) {
+    font-size: em(30);
+  }
+}
+.cmsuniversidad-boton {
+  display: inline-block;
+  font-family: $montserrat-font;
+  font-size: em(14);
+  font-weight: 600;
+  margin: 1em auto;
+  margin-top: auto;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  a {
+    color: #fff;
+    position: relative;
+    &:before {
+      content: '';
+      border-left: 6px solid #fff;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 105%;
+      margin-top: 0.2em;
+    }
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  &--boton1 {
+    background: $amarillo-universidad;
+  }
+  &--boton2 {
+    background: $azul-claro;
+  }
+  &--boton3 {
+    background: $verde-eventos;
+    margin-top: auto;
+  }
+}
+// Banner publicitario
+.cmsuniversidad-publicidad {
+  margin: 1em auto;
+  img {
+    @include img-responsive;
+  }
+}
+
+// Cards Universidad
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item {
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    @include media(md) {
+      flex-basis: calc(50% - 0.5rem);
+    }
+  }
+  &__img {
+    @include img-responsive;
+    object-fit: cover;
+  }
+  &__detalle {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -2em;
+    padding: 1em;
+  }
+  &__titulo {
+    color: $azul-medio;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: em(18);
+    font-weight: 600;
+    margin: 1em auto;
+  }
+  &__descripcion {
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1em auto;
+  }
+  &__txt-complementario {
+    color: $azul-claro;
+    font-family: $montserrat-font;
+    font-size: em(12);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

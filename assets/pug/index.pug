@@ -1,0 +1,51 @@
+extends layout/layout
+
+block content
+  //Banner destacado
+  section.header__banner
+    img(src="images/imagen-slider-principal.jpg", alt="Banner principal", class="img-fluid")
+    .container.d-flex.align-items-center
+      .header__flotante
+        .header__texto-banner
+          .header__texto-banner__titulo TEXTO DESTACADO
+          .header__texto-banner__subtitulo TEXTO COMPLEMENTARIO
+
+  // Texto destacado
+  include partials/_texto-destacado
+
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.globaltdg.com", target="_blank")
+        img(src="images/BannerTDG.png", alt="Banner publicitario", class="img-fluid")
+
+  // Listado de cursos
+  section.cursos
+    include partials/_cursos
+
+  // Listado de categorias
+  section.categorias
+    include partials/_categorias
+
+  section.cmsuniversidad-publicidad
+    .container.text-center.d-none.d-lg-block
+      a(href="#", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario")
+
+  section.suscripcion
+    .container
+      h1.suscripcion__titulo SUSCRÍBETE AHORA
+      h2.suscripcion__subtitulo Y RECIBE NUESTRAS NOVEDADES
+      .suscripcion__form
+        form
+          .inputAddon
+            input.inputAddon__field(type="email", name="emailBox", placeholder="DIRECCIÓN DE CORREO")
+            button.inputAddon__item SUSCRIBIRSE
+
+  section.actualidad
+    include partials/_actualidad-academica
+
+  section.aliados
+    include partials/_aliados
+
+  section.redes.my-5
+    include partials/_redes

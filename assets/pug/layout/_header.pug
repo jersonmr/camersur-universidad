@@ -1,0 +1,35 @@
+header.header
+  //Logo + Seccion de registro y redes sociales
+  section.header__top
+    .container.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
+      .header__logo
+        a(href="index.html", alt="Link a Universidad Camersur")
+          img(src="images/logo-universidad.svg", alt="Logo Universidad Camersur", width="312")
+      .header__acciones.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center
+        .header__idiomas.dropdown.d-flex.align-items-center
+          img(src="images/bandera-espana.png", alt="Español")
+          a(href="#") es
+        .header__registrarse
+          a(href="#") REGISTRARSE
+        a.header__login.d-flex.align-items-center(href="#")
+          | Iniciar sesión
+          img(src="images/icono-usuario.png", alt="Iniciar sesión")
+
+  // Iconos redes sociales
+  section.header__sociales
+    .container.d-flex.justify-content-center.justify-content-md-end
+      a(href="#")
+        img(src="images/icono-facebook.png", alt="Icono de Facebook")
+      a(href="#")
+        img(src="images/icono-instagram.png", alt="Icono de Instagram")
+      a(href="#")
+        img(src="images/icono-twitter.png", alt="Icono de Twitter")
+      a(href="#")
+        img(src="images/icono-linkedin.png", alt="Icono de LinkedIn")
+      a(href="#")
+        img(src="images/icono-rss.png", alt="Icono de canal RSS")
+
+  // Menu de navegacion + Caja de busqueda
+  section.header__navegacion
+    .container.d-flex.justify-content-between.align-items-center.flex-wrap.py-3
+      include ../partials/_navbar

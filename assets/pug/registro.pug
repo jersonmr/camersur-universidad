@@ -1,0 +1,20 @@
+extends layout/layout
+
+block content
+  // Seccion de registro
+  section.acceso.acceso--registro.pt-5
+    .container.d-flex.justify-content-center.align-items-center
+      .acceso__contenedor
+        h3 fórmate con nosotros
+        h2.mt-3.mb-4
+          | Accede y fórmate con
+          span.mt-2 camersur
+        .acceso__form.my-3
+          form.mb-3(action='#')
+            input#email.acceso__input.acceso__input--registro(type='email', name='email', placeholder='Correo electrónico')
+            input#empresa.acceso__input.acceso__input--registro(type='text', name='nombre', placeholder='Nombres')
+            input#passowrd.acceso__input.acceso__input--registro(type='text', name='apellido', placeholder='Apellidos')
+            button.acceso__btn.acceso__btn--registro(type='submit') REGISTRARME
+          .acceso__link-registro.mt-3.d-flex.justify-content-between
+            p ¿Ya estás registrado?
+            a(href='#') Entra aquí

@@ -1,0 +1,112 @@
+extends layout/layout
+
+block styles
+  link(rel="stylesheet", href="css/owl.carousel.min.css")
+
+block content
+
+  //Seccion nombre de la categoria
+  section.header-categoria
+    .container
+      .row
+        .col-md-8.col-lg-9
+          .header-categoria__desplegable
+            select.header-categoria__select.my-5(name="select-categoria")
+              option(selected="selected") ELEGIR OTRA CATEGORÍA
+          .header-categoria__texto
+            h1.header-categoria__titulo
+              |NOMBRE DE LA CATEGORIA
+            h2.header-categoria__descripcion.my-3
+              |algún texto destacando las ventajas de formarse en esa categoría algún texto destacando las ventajas de formarse en esa categoría
+        .col-md-4.col-lg-3
+          .profesores
+            h1.profesores__titulo PROFESORES
+            h3.profesores__subtitulo LOS MEJORES EXPERTOS
+            .profesores__item
+              img.profesores__img(src="images/ProfesorDetalleCurso1.png", alt="profesor 1")
+              .profesores__descripcion
+                h2.profesores__nombre NOMBRE ABC1
+                h3.profesores__profesion PROFESION
+            .profesores__item
+              img.profesores__img(src="images/ProfesorDetalleCurso2.png", alt="profesor 1")
+              .profesores__descripcion
+                h2.profesores__nombre NOMBRE ABC2
+                h3.profesores__profesion PROFESION
+            .profesores__item
+              img.profesores__img(src="images/ProfesorDetalleCurso3.png", alt="profesor 1")
+              .profesores__descripcion
+                h2.profesores__nombre NOMBRE ABC3
+                h3.profesores__profesion PROFESION
+
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.globaltdg.com", target="_blank")
+        img(src="images/BannerTDG.png", alt="Banner publicitario", class="img-fluid")
+
+  section.cursos-relacionados
+    .container
+      .cards.owl-carousel
+
+        article.cards__item
+          img(src="images/imagen-curso-1.jpg", alt="", class="cards__img")
+          .cards__detalle
+            h3.cards__titulo.mt-4 NOMBRE DEL CURSO
+            p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+            p.cards__descripcion Breve descripción de los objetivos y contenido del cursardscion Breve descripción de los objetivos y contenido del curso
+            p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+            h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.cards__item
+          img(src="images/imagen-curso-2.jpg", alt="", class="cards__img")
+          .cards__detalle
+            h3.cards__titulo.mt-4 NOMBRE DEL CURSO
+            p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+            h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.cards__item
+          img(src="images/imagen-curso-3.jpg", alt="", class="cards__img")
+          .cards__detalle
+            h3.cards__titulo.mt-4 NOMBRE DEL CURSO
+            p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+            h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+        article.cards__item
+          img(src="images/imagen-curso-4.jpg", alt="", class="cards__img")
+          .cards__detalle
+            h3.cards__titulo.mt-4 NOMBRE DEL CURSO
+            p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+            h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+          .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+            a(href="#") APRENDER MAS
+
+block scripts
+  script(src="js/owl.carousel.min.js")
+  script.
+    //Galería de imágenes con owl-carousel
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      autoWidth: false,
+      navText: ['<i class="fa fa-chevron-left" title="Anterior"></i>', '<i class="fa  fa-chevron-right" title="Siguiente"></i>'],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 20
+        },
+        992: {
+          items: 3,
+          margin: 15
+        },
+      }
+    });
+

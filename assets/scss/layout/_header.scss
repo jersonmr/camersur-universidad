@@ -1,0 +1,236 @@
+//Header
+.header {
+
+  &__top {
+    font-family: $josefin-font;
+    padding: 0.5rem;
+  }
+
+  &__logo {
+    @include media(sm) {
+      flex-basis: 50%;
+      img {
+        width: 75%;
+      }
+    }
+  }
+
+  &__acciones {
+    color: $azul-oscuro;
+    font-family: $montserrat-font;
+    font-size: 0.95em;
+    font-weight: 600;
+    flex-basis: 35%;
+    @include media(sm) {
+      flex-basis: 60%;
+    }
+    @include media(md) {
+      flex-basis: 40%;
+    }
+
+  }
+
+  &__idiomas {
+    > * {
+      font-weight: 600;
+      margin: 0.5rem 0.25rem;
+    }
+    a {
+      color: $azul-camersur;
+    }
+  }
+
+  &__registrarse {
+    a {
+      color: $azul-camersur;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($azul-camersur, 15%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__login {
+    background-color: $azul-medio;
+    margin: 0.5rem 0;
+    padding: 0.25rem 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $amarillo-universidad;
+      color: #fff;
+      text-decoration: none;
+    }
+    img {
+      margin-left: 0.3rem;
+    }
+  }
+
+  &__sociales {
+    margin: 0;
+    @include media(sm) {
+      margin-top: -1rem;
+    }
+    @include media(md) {
+      margin-top: -2rem;
+    }
+    @include media(lg) {
+      margin-top: -3rem;
+    }
+    a {
+      margin: 0 0.1rem;
+    }
+  }
+
+  // Contenedor menu de navegacion y caja de busqueda
+  &__navegacion {
+    margin: 1rem auto;
+    .container {
+      border-bottom: 1px solid $azul-ligero;
+    }
+
+    .boton-menu {
+      background: transparent;
+      border: 0;
+      color: $azul-medio;
+      cursor: pointer;
+      font-size: 2rem;
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($azul-medio, 10%);
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  &__menu {
+    flex-basis: 100%;
+    padding: 1rem 0;
+    @include media(md) {
+      display: block;
+      flex-basis: 60%;
+      order: -1;
+    }
+    @include media(lg) {
+      flex-basis: 70%;
+    }
+    ul {
+      @include media(md) {
+        display: flex;
+        margin: 0;
+      }
+    }
+    li {
+      display: block;
+      padding: 0.5rem 0;
+      text-align: center;
+      @include media(sm) {
+        flex: auto;
+      }
+    }
+
+    a {
+      border-top: 1px solid $gris-empresas;
+      color: $azul-medio;
+	  font-family: $montserrat-font;
+	  font-size: em(14);
+      text-decoration: none;
+      text-transform: uppercase;
+      @include media(md) {
+        border-top: 0;
+        margin: 0 0.3rem;
+        padding: 0.8rem;
+        border-bottom: 2px solid transparent;
+        transition: all .5s ease;
+      }
+    }
+    li.active a, a:hover {
+      border-bottom: 2px solid;
+    }
+  }
+
+  form {
+    @include media(md) {
+      flex-basis: 40%;
+    }
+    @include media(lg) {
+      flex-basis: 30%;
+    }
+  }
+
+  // Caja de busqueda
+  .inputAddOn {
+    border: 1px solid $azul-camersur;
+    display: flex;
+    &__field {
+      border: none;
+      outline: none;
+      flex: 1;
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0.7rem;
+      color: $azul-camersur;
+      font-family: $montserrat-font;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+    &__button {
+      background: transparent;
+      border: none;
+      color: $azul-camersur;
+      cursor: pointer;
+    }
+  }
+
+  // Texto destacado del banner
+  &__banner {
+    position: relative;
+    img {
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+  &__flotante {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid $amarillo-universidad;
+    padding: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__texto-banner {
+    color: #fff;
+    font-family: $josefin-font;
+    font-size: em(22);
+    font-weight: 600;
+    padding: 2em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    &__titulo {
+      font-size: em(26);
+      margin-bottom: 0.25em;
+    }
+    &__subtitulo {
+      color: $gris-empresas;
+    }
+  }
+
+  // Texto destacado
+  &__destacado {
+    padding: 1em;
+    text-align: center;
+  }
+}

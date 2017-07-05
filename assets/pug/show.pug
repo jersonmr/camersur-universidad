@@ -1,0 +1,136 @@
+extends layout/layout
+
+block content
+
+  //Banner destacado
+  section.header__banner
+    img(src="http://lorempixel.com/1200/470/business", alt="Banner principal", class="img-fluid")
+    .container
+      .header__flotante
+        .header__texto-banner
+          .header__texto-banner__titulo TEXTO DESTACADO
+          .header__texto-banner__subtitulo TEXTO COMPLEMENTARIO
+
+  // Texto destacado
+  include partials/_texto-destacado
+
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.globaltdg.com", target="_blank")
+        img(src="images/BannerTDG.png", alt="Banner publicitario", class="img-fluid")
+
+  section.detalle-curso
+    .container
+      .row
+        article.col-md-8.col-lg-9
+          include partials/_detalle-curso
+
+        aside.opciones-curso.col-md-4.col-lg-3
+          include partials/_sidebar-detalle-curso
+
+    section.cmsuniversidad-publicidad.d-none.d-md-block
+      .container.text-center
+        a(href="#", target="_blank")
+          img(src="images/Banner5.png", alt="Banner publicitario")
+
+
+  // CURSOS RELACIONADOS
+  section.cursos-relacionados
+    .container
+      .row
+        .col-lg-9
+          h1.cmsuniversidad-titulo.cmsuniversidad-titulo--actualidad CURSOS RELACIONADOS
+          .cards
+            article.cards__item
+              img(src="images/imagen-curso-1.jpg", alt="", class="cards__img")
+              .cards__detalle
+                h3.cards__titulo NOMBRE DEL CURSO
+                p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+                p.cards__descripcion Breve descripción de los objetivos y contenido del cursardscion Breve descripción de los objetivos y contenido del curso
+                p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+                h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+              .cmsuniversidad-boton.cmsuniversidad-boton--boton3
+                a(href="#") APRENDER MAS
+
+            article.cards__item
+              img(src="images/imagen-curso-2.jpg", alt="", class="cards__img")
+              .cards__detalle
+                h3.cards__titulo NOMBRE DEL CURSO
+                p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+                h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+              .cmsuniversidad-boton.cmsuniversidad-boton--boton3
+                a(href="#") APRENDER MAS
+
+            article.cards__item
+              img(src="images/imagen-curso-3.jpg", alt="", class="cards__img")
+              .cards__detalle
+                h3.cards__titulo NOMBRE DEL CURSO
+                p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+                h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+              .cmsuniversidad-boton.cmsuniversidad-boton--boton3
+                a(href="#") APRENDER MAS
+
+            article.cards__item
+              img(src="images/imagen-curso-4.jpg", alt="", class="cards__img")
+              .cards__detalle
+                h3.cards__titulo NOMBRE DEL CURSO
+                p.cards__descripcion Breve descripción de los objetivos y contenido del curso
+                h6.cards__txt-complementario TEXTO COMPLEMENTARIO
+              .cmsuniversidad-boton.cmsuniversidad-boton--boton3
+                a(href="#") APRENDER MAS
+
+
+          // Otras Categorias
+          section.otras-categorias
+            h1.cmsuniversidad-titulo.cmsuniversidad-titulo--actualidad OTRAS CATEGORÍAS
+
+            .otras-categorias__item
+              a(href="#")
+                img(src="images/icono-categoria-1.png", class="categorias__img")
+                p.otras-categorias__nombre CATEGORÍA 1
+
+            .otras-categorias__item
+              a(href="#")
+                img(src="images/icono-categoria-2.png", class="categorias__img")
+                p.otras-categorias__nombre CATEGORÍA 2
+
+            .otras-categorias__item
+              a(href="#")
+                img(src="images/icono-categoria-3.png", class="categorias__img")
+                p.otras-categorias__nombre CATEGORÍA 3
+
+            .otras-categorias__item
+              a(href="#")
+                img(src="images/icono-categoria-6.png", class="categorias__img")
+
+          // Aprende hoy mismo
+          section.suscripcion.text-center
+            h1.suscripcion__titulo APRENDE HOY MISMO
+            h2.suscripcion__subtitulo TEXTO COMPLEMENTARIO
+
+            .cmsuniversidad-boton.cmsuniversidad-boton--boton1
+              a(href="#") EMPIEZA AHORA
+
+        .col-lg-3
+          aside.anunciantes
+            .row
+              .col-sm-6.col-md-12
+                article.hidden-xs.col-sm-12.col-md-12.anunciantes__item
+                  a(href="#")
+                    img(src="images/esmitecp.png", alt="esmitecp", class="img-responsive")
+              .col-sm-6.col-md-12
+                article.hidden-xs.col-sm-12.col-md-12.anunciantes__item
+                  a(href="#")
+                    img(src="images/Banner1.png", alt="Banner 1", class="img-responsive")
+                article.hidden-xs.col-sm-12.col-md-12.anunciantes__item
+                  a(href="#")
+                    img(src="images/Banner2.png", alt="Banner 2", class="img-responsive")
+                article.hidden-xs.col-sm-12.col-md-12.anunciantes__item
+                  a(href="#")
+                    img(src="images/Banner3.png", alt="Banner 3", class="img-responsive")
+
+  section.aliados
+    include partials/_aliados
+
+  section.redes.my-5
+    include partials/_redes

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="author" content="Jerson Moreno"/>
+    <title>Camersur Universidad</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/camersur-universidad.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <!--Logo + Seccion de registro y redes sociales-->
+      <section class="header__top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="header__logo"><a href="index.html" alt="Link a Universidad Camersur"><img src="images/logo-universidad.svg" alt="Logo Universidad Camersur" width="312"/></a></div>
+          <div class="header__acciones d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="header__idiomas dropdown d-flex align-items-center"><img src="images/bandera-espana.png" alt="Español"/><a href="#">es</a></div>
+            <div class="header__registrarse"><a href="#">REGISTRARSE</a></div><a class="header__login d-flex align-items-center" href="#">Iniciar sesión<img src="images/icono-usuario.png" alt="Iniciar sesión"/></a>
+          </div>
+        </div>
+      </section>
+      <!-- Iconos redes sociales-->
+      <section class="header__sociales">
+        <div class="container d-flex justify-content-center justify-content-md-end"><a href="#"><img src="images/icono-facebook.png" alt="Icono de Facebook"/></a><a href="#"><img src="images/icono-instagram.png" alt="Icono de Instagram"/></a><a href="#"><img src="images/icono-twitter.png" alt="Icono de Twitter"/></a><a href="#"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"/></a><a href="#"><img src="images/icono-rss.png" alt="Icono de canal RSS"/></a></div>
+      </section>
+      <!-- Menu de navegacion + Caja de busqueda-->
+      <section class="header__navegacion">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap py-3">
+          <button class="boton-menu d-lg-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <form>
+            <div class="inputAddOn">
+              <input class="inputAddOn__field" type="search" name="searchBox" placeholder="Búsqueda"/>
+              <button class="inputAddOn__button"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <nav class="collapse header__menu" id="menu-principal">
+            <ul>
+              <li class="active"><a href="#">Cursos</a></li>
+              <li><a href="#">Alianzas</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Soporte</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!--Banner destacado-->
+    <section class="header__banner"><img class="img-fluid" src="images/imagen-slider-principal.jpg" alt="Banner principal"/>
+      <div class="container d-flex align-items-center">
+        <div class="header__flotante">
+          <div class="header__texto-banner">
+            <div class="header__texto-banner__titulo">TEXTO DESTACADO</div>
+            <div class="header__texto-banner__subtitulo">TEXTO COMPLEMENTARIO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Texto destacado-->
+    <section class="header__destacado">
+      <div class="container">
+        <h1 class="cmsuniversidad-titulo">TEXTO DESTACADO UNIVERSIDAD</h1>
+        <h2 class="cmsuniversidad-subtitulo">ALGÚN TEXTO COMPLEMENTARIO</h2>
+        <div class="cmsuniversidad-boton cmsuniversidad-boton--boton1"><a href="#">Conócenos</a></div>
+      </div>
+    </section>
+    <section class="cmsuniversidad-publicidad d-none d-sm-block">
+      <div class="container text-center"><a href="http://www.globaltdg.com" target="_blank"><img class="img-fluid" src="images/BannerTDG.png" alt="Banner publicitario"/></a></div>
+    </section>
+    <!-- Listado de cursos-->
+    <section class="cursos">
+      <div class="container d-flex flex-wrap justify-content-between">
+        <h1 class="cmsuniversidad-titulo cmsuniversidad-titulo--cursos">CURSOS DESTACADOS</h1>
+        <article class="cursos__item"><img class="cursos__img" src="images/imagen-curso-1.jpg"/>
+          <div class="cursos__contenido">
+            <h3 class="cursos__contenido--titulo">NOMBRE DEL CURSO</h3>
+            <p class="cursos__contenido--descripcion">Breve descripción de los objetivos y contenido del curso</p>
+            <p class="cursos__contenido--descripcion">Phasellus quis mollis diam. Morbi ut enim vitae leo placerat egestas. Suspendisse potenti. Nunc dapibus convallis libero sit amet vestibulum. Quisque sit amet est quis turpis rutrum ullamcorper sit amet id purus. Donec eget turpis elit. Aenean quis lorem aliquam, dignissim nulla a, euismod orci.</p>
+            <p class="cursos__contenido--txt-complementario">TEXTO COMPLEMENTARIO</p>
+          </div>
+          <div class="cmsuniversidad-boton cmsuniversidad-boton--boton2"><a href="#">APRENDER MAS</a></div>
+        </article>
+        <article class="cursos__item"><img class="cursos__img" src="images/imagen-curso-2.jpg"/>
+          <div class="cursos__contenido">
+            <h3 class="cursos__contenido--titulo">NOMBRE DEL CURSO</h3>
+            <p class="cursos__contenido--descripcion">Breve descripción de los objetivos y contenido del curso</p>
+            <p class="cursos__contenido--txt-complementario">TEXTO COMPLEMENTARIO</p>
+          </div>
+          <div class="cmsuniversidad-boton cmsuniversidad-boton--boton1"><a href="#">APRENDER MAS</a></div>
+        </article>
+        <article class="cursos__item"><img class="cursos__img" src="images/imagen-curso-3.jpg"/>
+          <div class="cursos__contenido">
+            <h3 class="cursos__contenido--titulo">NOMBRE DEL CURSO</h3>
+            <p class="cursos__contenido--descripcion">Breve descripción de los objetivos y contenido del curso</p>
+            <p class="cursos__contenido--txt-complementario">TEXTO COMPLEMENTARIO</p>
+          </div>
+          <div class="cmsuniversidad-boton cmsuniversidad-boton--boton3"><a href="#">APRENDER MAS</a></div>
+        </article>
+      </div>
+    </section>
+    <!-- Listado de categorias-->
+    <section class="categorias">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-9">
+            <h1 class="cmsuniversidad-titulo cmsuniversidad-titulo--categorias">CATEGORIAS DISPONIBLES</h1>
+            <h3 class="categorias__subtitulo">APRENDE SEGÚN TU ÁREA DE INTERÉS</h3>
+            <div class="categorias__listado">
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-1.png"/>
+                <p class="categorias__nombre"><a href="#">CATEGORÍA 1</a></p>
+              </div>
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-2.png"/>
+                <p class="categorias__nombre"><a href="#">CATEGORÍA 2</a></p>
+              </div>
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-3.png"/>
+                <p class="categorias__nombre"><a href="#">CATEGORÍA 3</a></p>
+              </div>
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-4.png"/>
+                <p class="categorias__nombre"><a href="#">CATEGORÍA 4</a></p>
+              </div>
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-5.png"/>
+                <p class="categorias__nombre"><a href="#">CATEGORÍA 5</a></p>
+              </div>
+              <div class="categorias__item"><img class="categorias__img" src="images/icono-categoria-6.png"/></div>
+            </div>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <aside class="publicidad"><a href="#"><img class="publicidad__img img-responsive" src="images/esmitecp.png"/></a></aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cmsuniversidad-publicidad">
+      <div class="container text-center d-none d-lg-block"><a href="#" target="_blank"><img src="images/Banner5.png" alt="Banner publicitario"/></a></div>
+    </section>
+    <section class="suscripcion">
+      <div class="container">
+        <h1 class="suscripcion__titulo">SUSCRÍBETE AHORA</h1>
+        <h2 class="suscripcion__subtitulo">Y RECIBE NUESTRAS NOVEDADES</h2>
+        <div class="suscripcion__form">
+          <form>
+            <div class="inputAddon">
+              <input class="inputAddon__field" type="email" name="emailBox" placeholder="DIRECCIÓN DE CORREO"/>
+              <button class="inputAddon__item">SUSCRIBIRSE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="actualidad">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-9">
+            <h1 class="cmsuniversidad-titulo cmsuniversidad-titulo--actualidad">ACTUALIDAD ACADÉMICA</h1>
+            <article class="actualidad__item"><img class="actualidad__img" src="images/imagen-actualidad-academica.jpg" alt="Actualidad Académica"/>
+              <div class="actualidad__contenido">
+                <h2 class="actualidad__contenido--titulo">TÍTULO DEL POST ACTUAL</h2>
+                <p class="actualidad__contenido--descripcion">Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post.</p>
+                <div class="cmsuniversidad-boton cmsuniversidad-boton--boton2"><a href="#">Leer más</a></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <aside class="anunciantes">
+              <article class="hidden-xs col-sm-12 col-md-12 anunciantes__item"><a href="#"><img class="img-responsive" src="images/Banner1.png" alt="Banner 1"/></a></article>
+              <article class="hidden-xs col-sm-12 col-md-12 anunciantes__item"><a href="#"><img class="img-responsive" src="images/Banner2.png" alt="Banner 2"/></a></article>
+              <article class="hidden-xs col-sm-12 col-md-12 anunciantes__item"><a href="#"><img class="img-responsive" src="images/Banner3.png" alt="Banner 3"/></a></article>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aliados">
+      <div class="container">
+        <h1 class="cmsuniversidad-titulo cmsuniversidad-titulo--aliados">NUESTROS ALIADOS</h1>
+        <div class="aliados__listado">
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-1.png"/></a></div>
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-2.png"/></a></div>
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-3.png"/></a></div>
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-4.png"/></a></div>
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-5.png"/></a></div>
+          <div class="aliados__item"><a href="#"><img class="img-responsive" src="images/icono-referencial-aliado-6.png"/></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="redes my-5">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <div class="redes__item redes__item--facebook">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fca.mer.sur.com.ve%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="340" height="500" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        </div>
+        <div class="redes__item redes__item--twitter"><a class="twitter-timeline" data-height="600" href="https://twitter.com/Camersur">Tweets by Camersur</a>
+          <script async="async" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="redes__item redes__item--instagram">
+          <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+          <script type="IN/CompanyProfile" data-id="10518585" data-format="inline" data-related="false"></script>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container d-flex justify-content-between flex-wrap">
+        <!-- Logo Camersur-->
+        <section class="footer__logo"><a href="#"><img class="img-responsive" src="images/logo-universidad-camersur-footer.png" alt="Universidad Camersur Logo"/></a></section>
+        <!-- Seccion acerca de nosotros-->
+        <section class="footer__acerca">
+          <h4 class="footer__titulo">Acerca de Camersur</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Nosotros</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Planes</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Aviso legal</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Términos de uso</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Políticas de cookies</a></li>
+          </ul>
+        </section>
+        <section class="footer__categorias">
+          <h4 class="footer__titulo">Áreas de interés</h4>
+          <ul class="footer__menu">
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Cursos</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Alianzas</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Nosotros</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Soporte</a></li>
+            <li class="footer__menu__item"><a class="footer__menu__link" href="#">Blog</a></li>
+          </ul>
+        </section>
+        <section class="footer__contacto">
+          <h4 class="footer__titulo">Contacto</h4>
+          <p class="contacto__email">info@camersur.com</p>
+          <p class="contacto__telefono">Telf: 954-687-0025</p>
+          <p class="contacto__direccion">2863 Executive Park Dr. Suite 102 Weston<br/>FL 33326</p>
+        </section>
+        <!-- Seccion de copyright-->
+        <section class="footer__copyright">
+          <p class="text-center">Copyright &copy; CAMERSUR, 2016-2017. Todos los derechos reservados</p>
+        </section>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

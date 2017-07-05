@@ -1,0 +1,67 @@
+.resultados {
+  &__cantidad {
+    color: darken($gris-empresas, 25%);
+    font-family: $montserrat-font;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    flex-basis: 100%;
+    order: -1;
+  }
+  &__listado {
+
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    @include media(sm) {
+      flex-direction: row;
+    }
+  }
+  &__info {
+    background-color: $gris-empresas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media(sm) {
+      flex-direction: row;
+      width: 70%;
+    }
+  }
+  &__img {
+    @include media(sm) {
+      width: 20%;
+      height: 70%;
+    }
+  }
+  &__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $montserrat-font;
+    padding: 1rem;
+    @include media(sm) {
+      width: 90%;
+    }
+    a {
+      color: $azul-camersur;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($azul-camersur, 15%);
+      }
+    }
+  }
+  &__titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  &__descripcion {
+    color: darken($gris-empresas, 45%);
+  }
+  .cmsuniversidad-boton.cmsuniversidad-boton--boton1 {
+    margin-top: 0;
+  }
+}

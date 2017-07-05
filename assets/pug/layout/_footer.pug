@@ -1,0 +1,43 @@
+footer.footer
+  .container.d-flex.justify-content-between.flex-wrap
+
+    // Logo Camersur
+    section.footer__logo
+      a(href="#")
+        img(src="images/logo-universidad-camersur-footer.png", alt="Universidad Camersur Logo", class="img-responsive")
+
+    // Seccion acerca de nosotros
+    section.footer__acerca
+      h4.footer__titulo Acerca de Camersur
+      ul.footer__menu
+        li.footer__menu__item: a.footer__menu__link(href="#") Nosotros
+        li.footer__menu__item: a.footer__menu__link(href="#") Planes
+        li.footer__menu__item: a.footer__menu__link(href="#") Aviso legal
+        li.footer__menu__item: a.footer__menu__link(href="#") Términos de uso
+        li.footer__menu__item: a.footer__menu__link(href="#") Políticas de cookies
+
+    section.footer__categorias
+      h4.footer__titulo Áreas de interés
+      ul.footer__menu
+        li.footer__menu__item: a.footer__menu__link(href="#") Cursos
+        li.footer__menu__item: a.footer__menu__link(href="#") Alianzas
+        li.footer__menu__item: a.footer__menu__link(href="#") Nosotros
+        li.footer__menu__item: a.footer__menu__link(href="#") Soporte
+        li.footer__menu__item: a.footer__menu__link(href="#") Blog
+
+    section.footer__contacto
+      h4.footer__titulo Contacto
+      p.contacto__email info@camersur.com
+      p.contacto__telefono Telf: 954-687-0025
+      p.contacto__direccion
+        | 2863 Executive Park Dr. Suite 102 Weston
+        br
+        | FL 33326
+
+    // Seccion de copyright
+    section.footer__copyright
+      p.text-center Copyright &copy; CAMERSUR, 2016-2017. Todos los derechos reservados
+
+script(src="js/jquery.min.js")
+script(src="js/bootstrap.js")
+block scripts

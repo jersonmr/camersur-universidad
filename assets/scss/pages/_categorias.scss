@@ -1,0 +1,59 @@
+.header-categoria {
+  background: url("../images/bg-categorias-universidad.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  font-family: $montserrat-font;
+
+  &__desplegable {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__select {
+    background-color: transparent;
+    border-color: transparent;
+    color: $gris-empresas;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__titulo {
+    font-size: em(36);
+    line-height: 1.25;
+    text-align: center;
+    @include media(sm) {
+      font-size: em(48);
+      text-align: left;
+    }
+  }
+
+  &__descripcion {
+    line-height: 1.5;
+    font-size: em(16);
+    text-transform: uppercase;
+    @include media(sm) {
+      font-size: em(22);
+    }
+  }
+}
+
+// Estilos para navegacion de los cursos
+.owl-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  .owl-prev, .owl-next {
+    color: darken($gris-empresas, 15%);
+    font-size: 3rem;
+    margin: 0 0.5rem;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $amarillo-universidad;
+    }
+  }
+}
