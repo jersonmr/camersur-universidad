@@ -140,8 +140,8 @@
     a {
       border-top: 1px solid $gris-empresas;
       color: $azul-medio;
-	  font-family: $montserrat-font;
-	  font-size: em(14);
+	  	font-family: $montserrat-font;
+	  	font-size: em(14);
       text-decoration: none;
       text-transform: uppercase;
       @include media(md) {

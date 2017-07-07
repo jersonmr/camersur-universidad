@@ -1,0 +1,88 @@
+.faq {
+  color: $texto-descripcion;
+  font-family: $montserrat-font;
+
+  h2 {
+    color: darken($texto-descripcion, 15%);
+    font-size: 1.5rem;
+    margin: 2rem auto 0.5rem;
+  }
+  #accordion {
+    .card {
+      margin-bottom: 1rem;
+      .card-header {
+        background-color: gray;
+        a {
+          color: #fff;
+          font-size: 1.25rem;
+          text-transform: uppercase;
+        }
+      }
+      .card-header.active {
+        background-color: $amarillo-universidad;
+      }
+      .card-block {
+        line-height: 1.25;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.contacto {
+  background-color: $azul-camersur;
+  color: #fff;
+  font-family: $montserrat-font;
+  &__subtitulo {
+    color: $azul-ligero;
+    font-size: 1.5rem;
+    &--dudas {
+      color: #fff;
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0.5rem auto 2rem;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__descripcion {
+    color: $azul-ligero;
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+  &__datos {
+    margin: 2rem auto;
+    p {
+      font-size: 1.5rem;
+      margin: 1rem auto;
+      i {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  &__redes {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    a {
+      color: #fff;
+      margin: 0 0.5rem;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $amarillo-universidad;
+      }
+    }
+  }
+  .form-control {
+    border-bottom: 4px solid $azul-news;
+  }
+  input[type="submit"] {
+    background-color: $amarillo-universidad;
+    border: none;
+    color: white;
+    font-family: $josefin-font;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+  }
+}

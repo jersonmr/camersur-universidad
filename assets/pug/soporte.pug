@@ -1,0 +1,103 @@
+extends layout/layout
+
+block content
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.camersur.com", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario", class="img-fluid")
+
+  section.faq.my-5
+    .container
+      h1.cmsuniversidad-titulo.cmsuniversidad-titulo--actualidad SOPORTE
+      p Algún texto describiendo la función de la página de soporte
+
+      // Acordeon con preguntas frecuentes
+      h2 PREGUNTAS FRECUENTES
+      #accordion(role='tablist', aria-multiselectable='true')
+        .card
+          .card-header.active(role='tab')
+            h5.mb-0
+              a(data-toggle='collapse', data-parent='#accordion', href='#faq1')
+                | ¿TEXTO DE LA PREGUNTA NÚMERO 1?
+          #faq1.collapse.show(role='tabpanel')
+            .card-block
+              | Texto de la respuesta correspondiente a la pregunta número 1. Texto de la respuesta correspondiente a la pregunta número 1. Texto de la respuesta correspondiente a la pregunta número 1.
+        .card
+          .card-header(role='tab')
+            h5.mb-0
+              a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#faq2')
+                | ¿TEXTO DE LA PREGUNTA NÚMERO 2?
+          #faq2.collapse(role='tabpanel')
+            .card-block
+              | Texto de la respuesta correspondiente a la pregunta número 2. Texto de la respuesta correspondiente a la pregunta número 2. Texto de la respuesta correspondiente a la pregunta número 2.
+
+        .card
+          .card-header(role='tab')
+            h5.mb-0
+              a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#faq3')
+                | ¿TEXTO DE LA PREGUNTA NÚMERO 3?
+          #faq3.collapse(role='tabpanel')
+            .card-block
+              | Texto de la respuesta correspondiente a la pregunta número 3. Texto de la respuesta correspondiente a la pregunta número 3. Texto de la respuesta correspondiente a la pregunta número 3.
+
+        .card
+          .card-header(role='tab')
+            h5.mb-0
+              a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#faq4')
+                | ¿TEXTO DE LA PREGUNTA NÚMERO 4?
+          #faq4.collapse(role='tabpanel')
+            .card-block
+              | Texto de la respuesta correspondiente a la pregunta número 4. Texto de la respuesta correspondiente a la pregunta número 4. Texto de la respuesta correspondiente a la pregunta número 4.
+  
+  section.contacto.py-5
+    .container
+      .row
+        .col-sm-6
+          h2.contacto__subtitulo ¿AÚN TIENES PREGUNTAS?
+          h1.contacto__subtitulo--dudas Envíanos tus dudas 
+            span Y TE AYUDAREMOS
+          p.contacto__descripcion
+            |También puedes contactarnos a través de los canales de comunicación que tenemos disponibles para ti:
+          
+          .contacto__datos
+            p
+              i.fa.fa-envelope-o 
+              |info@camersur.com
+            p
+              i.fa.fa-mobile 
+              |954-687-0025
+          
+          .contacto__redes
+            a(href="#")
+              i.fa.fa-facebook-square
+            a(href="")
+              i.fa.fa-instagram
+            a(href="")
+              i.fa.fa-twitter-square
+            a(href="#")
+              i.fa.fa-linkedin-square
+            a(href="#")
+              i.fa.fa-rss-square
+
+        .col-sm-6
+          form
+            .form-group
+              input(type="text", name="nombre", placeholder="Nombres").form-control
+            .form-group
+              input(type="text", name="apellido", placeholder="Apellidos").form-control
+            .form-group
+              input(type="email", name="email", placeholder="Correo electrónico").form-control
+            .form-group
+              input(type="text", name="asunto", placeholder="Asunto").form-control
+            .form-group
+              textarea(name="mensaje", cols="30", rows="10").form-control
+            .form-group
+              input(type="submit", value="Enviar").btn-block
+block scripts
+  script.
+    $(document).ready(function() {
+      $('.card-header').on('click', 'a', function() {        
+        $('.card-header.active').removeClass('active');        
+        $(this).parent().closest('.card-header').addClass('active');                
+      });      
+    });
