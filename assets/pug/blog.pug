@@ -1,0 +1,107 @@
+extends layout/layout
+
+block content
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.camersur.com", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario", class="img-fluid")
+
+  section.posts.my-5
+    .container
+      .row
+        .col-sm-6.col-md-8
+          h1.cmsuniversidad-titulo.cmsuniversidad-titulo--aliados BLOG UNIVERSIDAD CAMERSUR          
+          article.posts__item
+            .posts__img
+              img(src="images/imagen-actualidad-academica.jpg", alt="")
+            .posts__texto
+              h2.posts__titulo TÍTULO DEL POST
+              p.posts__descripcion
+                |Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post... Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post...
+          .posts__info
+            .posts__data
+              h4.posts__autor NOMBRE DEL AUTOR |
+              span.posts__fecha 12/05/2017 09:00 AM              
+            a(href="#", target="_blank", alt="").posts__boton LEER MÁS
+
+          article.posts__item
+            .posts__img
+              img(src="images/imagen-curso-2.jpg", alt="")
+            .posts__texto
+              h2.posts__titulo TÍTULO DEL POST
+              p.posts__descripcion
+                |Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post... Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post...
+          .posts__info
+            .posts__data
+              h4.posts__autor NOMBRE DEL AUTOR |
+              span.posts__fecha 12/05/2017 09:00 AM              
+            a(href="#", target="_blank", alt="").posts__boton LEER MÁS
+          
+          article.posts__item
+            .posts__img
+              img(src="images/imagen-curso-3.jpg", alt="")
+            .posts__texto
+              h2.posts__titulo TÍTULO DEL POST
+              p.posts__descripcion
+                |Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post... Resumen o breve reseña del contenido del post. Resumen o breve reseña del contenido del post...
+          .posts__info
+            .posts__data
+              h4.posts__autor NOMBRE DEL AUTOR |
+              span.posts__fecha 12/05/2017 09:00 AM              
+            a(href="#", target="_blank", alt="").posts__boton LEER MÁS
+
+        .col-sm-6.col-md-4
+          aside.posts-sidebar.py-5
+            h1.posts-sidebar__encabezado POSTS MÁS POPULARES
+            article.posts-sidebar__item
+              .posts-sidebar__numero 1
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 1
+            article.posts-sidebar__item
+              .posts-sidebar__numero 2
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 2
+            article.posts-sidebar__item
+              .posts-sidebar__numero 3
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 3
+            article.posts-sidebar__item
+              .posts-sidebar__numero 4
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 4
+            article.posts-sidebar__item
+              .posts-sidebar__numero 5
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 5
+            article.posts-sidebar__item
+              .posts-sidebar__numero 6
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 6
+            article.posts-sidebar__item
+              .posts-sidebar__numero 7
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 7
+            article.posts-sidebar__item
+              .posts-sidebar__numero 8
+              .posts-sidebar__texto 
+                h2.posts-sidebar__titulo Título del post lorem ipsum
+                p.posts-sidebar__descripcion texto del título 8
+          
+          // Formulario de suscripcion
+          .suscribete.py-5
+            h2.suscribete__titulo SUSCRÍBETE AHORA
+            h4.suscribete__subtitulo Y RECIBE NUESTRAS NOVEDADES
+
+            Form.suscribete__form
+              input(type="email", placeholder="DIRECCIÓN DE CORREO", class="form-control")
+              button(type="submit", class="btn-block suscribete__boton") SUSCRIBÍRSE
+
+          // Publicidad
+          img(src="images/esmitecp.png", alt="ESMITECP").text-center

@@ -1,0 +1,205 @@
+.posts {
+	&__item {
+		border: 1px solid #c4cbcc;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 0.5rem;
+		flex-basis: 100%;
+		@include media(sm) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		@include media(md) {
+			align-items: flex-start;
+		}
+	}
+
+	&__img {		
+		@include media(sm) {
+			flex-basis: 30%;						
+		}
+		@include media(md) {
+			flex-basis: 30%;			
+			text-align: center;
+		}
+	}
+
+	&__texto {		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;		
+		height: 100%;
+		padding: 1rem 0.5rem;
+		@include media(sm) {			
+			flex-basis: 70%;
+			padding: 0.5rem 1rem 0;
+		}
+		@include media(md) {
+			flex-basis: 70%;
+			padding: 1.5rem 1rem 0;			
+		}
+	}
+
+	&__titulo {
+		color: #3b658d;
+		text-transform: uppercase;
+		font-family: $josefin-font;
+		font-size: em(21);
+		font-weight: 600;
+	}
+
+	&__descripcion {
+		color: #7a8998;
+		font-family: $montserrat-font;
+		font-size: em(14);
+		line-height: 1.3;
+		margin: 0.5rem 0;
+	}
+
+	&__info {
+		flex-basis: 100%;
+		margin-bottom: 1rem;
+		@include media(sm) {
+			display: flex;
+		}
+	}
+
+	&__data {
+		flex-basis: 70%;
+		background-color: #e4e7e7;
+		display: flex;
+		font-family: $montserrat-font;
+		font-size: em(12);
+		font-weight: 300;
+		padding: 0.5rem 1rem;
+	}
+
+	&__autor {
+		color: #5c778f;
+	}
+
+	&__fecha {
+		color: #778796;
+	}
+
+	&__boton {
+		flex-basis: 30%;
+		background-color: #248dc6;
+		color: #fff;
+		display: block;
+		font-family: $montserrat-font;
+		font-size: em(13);
+		padding: 0.5rem;
+		text-align: center;
+		width: 100%;
+		transition: all 0.5s ease;
+		&:hover {
+			background-color: #3b658d;
+			color: #fff;
+			text-decoration: none;
+		}
+		&::after {
+			content: '\f0da';
+			font-family: FontAwesome;			
+			margin-left: 0.5rem;
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------
+| SIDEBAR SECCION POSTS
+|--------------------------------------------------------------
+*/
+.posts-sidebar {
+	background-color: #2f2e2e;
+	font-family: $montserrat-font;
+	padding: 0 1rem;
+
+	&__encabezado {
+		color: #fff;		
+		font-size: em(18);
+		font-weight: 600;	
+		text-align: center;	
+	}
+
+	&__item {
+		display: flex;
+		margin-top: 2rem;		
+	}
+
+	&__numero {
+		border: 1px solid #fff;
+		color: #fcbe00;
+		font-size: em(18);
+		font-weight: 300;
+		padding: 0.5rem;	
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+
+	&__texto {
+		color: #abadb0;
+		font-size: em(14);
+		font-weight: 300;
+		padding: 0 1rem;
+	}
+
+	&__titulo {
+		margin-bottom: 0.25rem;
+	}
+}
+
+/*
+|--------------------------------------------------------------
+| SECCIÓN SUSCRIBIRSE
+|--------------------------------------------------------------
+*/
+.suscribete {
+	text-align: center;
+	font-family: $montserrat-font;
+	&__titulo {
+		color: #3b658d;
+		font-size: em(22);
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+	&__subtitulo {
+		color: #7a8988;		
+		font-size: em(14);
+		font-weight: 300;
+		margin-bottom: 1rem;
+	}
+
+	&__form {
+		input[type="email"] {
+			border: 1px solid #8099b1;
+			color: #c6c1dc;
+			font-family: $montserrat-font;
+			font-size: em(14);
+		}
+	}
+
+	&__boton {
+		background-color: $amarillo-universidad;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		margin-top: 1rem;
+		padding: 1rem 2rem;
+		transition: all 0.5s ease;
+
+		&:hover {
+			background-color: $azul-news;
+			text-decoration: none;
+		}
+
+		&::after {
+			content: "\f0da";
+			font-family: FontAwesome;
+			padding-left: 0.5rem;
+		}
+	}
+}
