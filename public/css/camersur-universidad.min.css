@@ -112,6 +112,12 @@ img {
   color: #1572a2;
 }
 
+.header__idiomas .btn-secondary {
+  background: transparent;
+  border: none;
+  color: #1572a2;
+}
+
 .header__registrarse a {
   color: #1572a2;
   font-size: 1rem;
@@ -375,6 +381,12 @@ img {
 .header__destacado {
   padding: 1em;
   text-align: center;
+}
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: transparent;
+  background-image: none;
+  border-color: #6c757d;
 }
 
 .redes {

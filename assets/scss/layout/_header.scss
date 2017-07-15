@@ -38,7 +38,14 @@
     a {
       color: $azul-camersur;
     }
-  }
+		// Estilos para el dropdown de idiomas
+		.btn-secondary {
+			background: transparent;
+			border: none;
+			color: $azul-camersur;
+		}		
+	}
+	
 
   &__registrarse {
     a {
@@ -233,4 +240,11 @@
     padding: 1em;
     text-align: center;
   }
+}
+
+// Dropdown de idiomas desplegado
+.show > .btn-secondary.dropdown-toggle {
+	background-color: transparent;
+	background-image: none;
+	border-color: #6c757d;
 }
