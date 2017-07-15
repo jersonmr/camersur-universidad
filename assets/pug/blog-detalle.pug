@@ -1,0 +1,59 @@
+extends layout/layout
+
+block content
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.camersur.com", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario", class="img-fluid")
+
+  section.post-individual.my-5
+    .container
+      h1.cmsuniversidad-titulo.cmsuniversidad-titulo--aliados BLOG UNIVERSIDAD CAMERSUR          
+      .row.mb-5
+        .col-sm-6.col-md-8
+          .post-individual__img
+            img(src="images/imagen-actualidad-academica.jpg", alt="")
+          .posts__info
+            .posts__data(style="flex-basis: 100%")
+              h4.posts__autor NOMBRE DEL AUTOR |
+              span.posts__fecha 12/05/2017 09:00 AM                          
+          
+          h2 TÍTULO DEL POST ACTUAL
+
+          p
+            |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta massa quis neque vulputate, id tincidunt turpis tincidunt. Aliquam rutrum convallis arcu, eu sollicitudin mauris congue in. Curabitur pretium purus ex, a pulvinar neque vestibulum quis. Morbi sed odio ac felis scelerisque aliquet quis vitae felis. In scelerisque pretium luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a ante nec tortor rutrum eleifend. Praesent venenatis leo a posuere molestie. Donec vitae malesuada metus. Cras vestibulum dui sit amet felis eleifend faucibus. Fusce in est aliquam, ullamcorper lectus eget, tincidunt nunc.
+
+          p
+            |Donec placerat orci quis tincidunt ornare. Duis quis finibus neque, eu pretium odio. Aenean mattis lorem turpis, at dignissim orci dignissim at. Integer ullamcorper nisl quam, vel aliquam est convallis vitae. Nam gravida nisl sapien, sed laoreet nulla scelerisque non. Aliquam et vestibulum sapien, eget ornare elit. Aliquam lobortis nisl in ligula venenatis, sed ultrices ex pulvinar. Nunc mattis sit amet odio non mollis. Nunc pretium tempor finibus. Ut sed ultrices tellus. Aliquam sodales dictum sagittis. Duis sit amet sagittis lorem.
+
+          p
+            |Aliquam justo felis, rhoncus in sapien pretium, iaculis mattis leo. Quisque consectetur vel ante id malesuada. Sed accumsan vitae quam id egestas. Aliquam ultrices egestas ex, quis volutpat diam molestie quis. Aliquam tincidunt eu mi nec tempor. Nunc gravida justo ac mi tincidunt, vitae rhoncus massa sollicitudin. Proin eleifend augue ut enim ornare pharetra. Ut ut posuere nibh, in ultrices diam. Vivamus tristique ornare posuere. Nam dictum dapibus neque, non condimentum ex dictum id. Praesent vel diam nisi. Sed sit amet quam quis orci vehicula dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non purus enim. Morbi ligula lectus, maximus sit amet lacus vel, maximus facilisis sapien.
+
+          p
+            |Ut vitae auctor neque. Aliquam condimentum mattis magna non luctus. Donec iaculis quis risus sollicitudin rutrum. Cras metus metus, commodo eu mauris eu, placerat volutpat velit. Vivamus et erat nunc. Fusce pharetra, tortor varius bibendum tempus, erat sapien mollis ante, sit amet convallis lectus risus vitae tellus. Donec ullamcorper sapien rutrum, suscipit purus eget, pulvinar nisi. Proin id arcu in libero finibus egestas. Nulla facilisi. Sed vulputate orci massa, vitae gravida dolor elementum et. Donec tempus felis vel lacus condimentum ornare. Morbi fringilla iaculis nulla, vel volutpat metus tincidunt sit amet. Suspendisse potenti. Sed consectetur risus metus, id volutpat turpis bibendum nec. Aliquam quis magna tortor.
+
+          p
+            |Suspendisse quis risus aliquet, congue ipsum et, rhoncus magna. Aenean tempus tempor congue. Donec at auctor lacus, vitae ornare sapien. Aenean tincidunt risus sit amet magna sollicitudin ultricies. Aliquam in ante orci. Vestibulum aliquet dui elementum ligula auctor pellentesque. Fusce laoreet mi non leo pharetra fringilla. Proin at arcu lorem. Suspendisse sed velit est. Aliquam tincidunt vestibulum eros, at tempus nulla fermentum non. Suspendisse dictum erat libero, at placerat purus maximus eget. Nam scelerisque et risus a cursus. Mauris scelerisque vel urna sed cursus.
+        
+        .col-sm-6.col-md-4
+          aside
+            // Formulario de suscripcion
+            .suscribete
+              h2.suscribete__titulo SUSCRÍBETE AHORA
+              h4.suscribete__subtitulo Y RECIBE NUESTRAS NOVEDADES
+
+              Form.suscribete__form
+                input(type="email", placeholder="DIRECCIÓN DE CORREO", class="form-control")
+                button(type="submit", class="btn-block suscribete__boton") SUSCRIBÍRSE
+
+            // Publicidad
+            img(src="images/esmitecp.png", alt="ESMITECP").text-center.mt-5
+
+            a.my-5(href="#")
+              img(src="images/Banner1.png", alt="Banner 1")
+            
+            a(href="#")
+              img(src="images/Banner2.png", alt="Banner 2")
+
+    include partials/_redes
+      
