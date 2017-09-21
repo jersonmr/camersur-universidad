@@ -24,10 +24,10 @@
   }
   &__acerca, &__categorias, &__contacto {
     flex-basis: 100%;
-    @include media(sm) {
-      border-right: 1px solid $azul-ligero;
+    @include media(sm) {      
       flex-basis: calc(33.33% - 0.5rem);
-      padding: 0 1rem;
+      padding: 0 1rem 0 2rem;
+      text-align: left;
     }
     @include media(md) {
       flex-basis: calc(25% - 0.5rem);
@@ -69,8 +69,7 @@
     line-height: 1.5;
     margin-bottom: 1rem;
     p {
-      margin: 0;
-      text-align: center;
+      margin: 0;      
     }
   }
   // Copyright
